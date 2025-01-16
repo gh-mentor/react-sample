@@ -1,22 +1,21 @@
-Create a workflow using GitHub Actions with the following requirements:
+Create a workflow using GitHub Actions that will build and test the project on every push and pull request to the main branch. The workflow should also be triggered manually using the workflow_dispatch event.
 
 Define the workflow name and triggers:
-- Set the workflow name to build-and-test.
-- Define the triggers for push and pull_request events on the main branch. Only execute the job if there are changes to files in the src folder hierarchy:
-- Define a trigger for workflow_dispatch.
+- Set the workflow name to 'build-and-test'.
+- Set triggers for push and pull_request events on the main branch. Only execute the job if there are changes to files in the src folder hierarchy
+- Set a trigger for workflow_dispatch.
+
 Define the job:
 - Name the job 'build-and-test'.
 - Set the runner to ubuntu-latest.
 
-Add the steps:
+Add the steps to the job:
 - Checkout the repository:
 -- Use the actions/checkout@v4 action.
 - Set up Node.js:
 -- Use the actions/setup-node@v4 action.
 -- Specify the Node.js version (20.9.0).
-- Install dependencies:
--- Use the 'npm ci' command for a clean install.
-- Build the app:
--- Use the 'npm run build' command.
-- Run tests:
--- Use the npm test command.
+- Install dependencies with npm for a clean install.
+- Build the app
+- Run tests
+
