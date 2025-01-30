@@ -17,4 +17,4 @@ git commit -m "Updated"
 
 # Push changes to remote repository on branch 'main'
 
-git push origin main
+git push 
