@@ -1,11 +1,11 @@
-Create a workflow using GitHub Actions with the following requirements:
+Create a workflow file in the '.github/workflows' folder 'build_and_test.yml' using GitHub Actions with the following requirements:
 
 Define the workflow name and triggers:
-- Set the workflow name to build-and-test.
-- Define the triggers for push and pull_request events on the main branch. Only execute the job if there are changes to files in the src folder hierarchy:
+- Set the workflow name to 'wf-build-and-test'.
+- Define the triggers for push and pull_request events on the main branch. Only execute the job if there are changes to files in the 'src' folder hierarchy:
 - Define a trigger for workflow_dispatch.
 Define the job:
-- Name the job 'build-and-test'.
+- Name the job 'job-build-and-test'.
 - Set the runner to ubuntu-latest.
 
 Add the steps:
